@@ -2,55 +2,55 @@
 
 # Let's get cooking!
 
-# ingredient_1 = 'milk'
-# ingredient_2 = 'eggs'
-# ingredient_3 = 'flour'
-# ingredient_4 = 'sugar'
+ingredient_1 = 'milk'
+ingredient_2 = 'eggs'
+ingredient_3 = 'flour'
+ingredient_4 = 'sugar'
 
 
-# # def print_ingredients():  # Ways to work with strings/printing
-# #     # Those are the right ingredients, aren't they? Let's print them out a few different ways to check
-# #     # 1.1 Using one print statement, print out the ingredients as 4 separate strings
-# #     print(ingredient_1 + ', ' + ingredient_2 +', ' +ingredient_3+', ' + ingredient_4)
+def print_ingredients():  # Ways to work with strings/printing
+#     # Those are the right ingredients, aren't they? Let's print them out a few different ways to check
+#     # 1.1 Using one print statement, print out the ingredients as 4 separate strings
+    print(ingredient_1 + ', ' + ingredient_2 +', ' +ingredient_3+', ' + ingredient_4)
 
-# #     # 1.2 Using one print statement, use string concatenation to print the ingredients
-# #     # as a single string (make sure to add a space between each ingredient!)
-# #     print(ingredient_1 + ' ' + ingredient_2 +' ' +ingredient_3+' ' + ingredient_4)
+#     # 1.2 Using one print statement, use string concatenation to print the ingredients
+#     # as a single string (make sure to add a space between each ingredient!)
+    print(ingredient_1 + ' ' + ingredient_2 +' ' +ingredient_3+' ' + ingredient_4)
 
-# #     # 1.3 Using one print statement, use an f-string to print the ingredients
-# #     # as a single string (make sure to add a space between each ingredient!)
-# #     print(f"{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}")
-# # print_ingredients()
+#     # 1.3 Using one print statement, use an f-string to print the ingredients
+#     # as a single string (make sure to add a space between each ingredient!)
+    print(f"{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}")
+print_ingredients()
 
-# def confirm_ingredients():
-#     global ingredient_1, ingredient_2, ingredient_3, ingredient_4
+def confirm_ingredients():
+    global ingredient_1, ingredient_2, ingredient_3, ingredient_4
     
-#     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
-#     ingredients = f"{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}"
+    # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
+    ingredients = f"{ingredient_1}, {ingredient_2}, {ingredient_3}, {ingredient_4}"
     
-#     # Aha, that's the issue! We need to use butter, not milk.
-#     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
-#     corrected_ingredients = ingredients.replace('milk', 'butter')
-#     print(corrected_ingredients)
+    # Aha, that's the issue! We need to use butter, not milk.
+    # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
+    corrected_ingredients = ingredients.replace('milk', 'butter')
+    print(corrected_ingredients)
     
-#     # Hmm, when we use a string method in a print statement, does it change the string in our variable?
-#     # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
-#     # Print this number out.
-#     milk_count = ingredients.count('milk')
-#     print(milk_count)
+    # Hmm, when we use a string method in a print statement, does it change the string in our variable?
+    # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
+    # Print this number out.
+    milk_count = ingredients.count('milk')
+    print(milk_count)
 
-#     # 2.4 Let's print out our `ingredients` variable again just to be sure.
-#     print(ingredients)
+    # 2.4 Let's print out our `ingredients` variable again just to be sure.
+    print(ingredients)
 
-#     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
-#     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
-#     ingredients = ingredients.replace('milk', 'butter')
-#     # 2.6 Print `ingredients` to make sure the change stuck this time.
-#     print(ingredients)
-#     # 2.7 That looks better. Let's make it official: use another string method to 
-#     # print the string in the `ingredients` variable in all-caps now that it's right.
+    # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
+    # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
+    ingredients = ingredients.replace('milk', 'butter')
+    # 2.6 Print `ingredients` to make sure the change stuck this time.
+    print(ingredients)
+    # 2.7 That looks better. Let's make it official: use another string method to 
+    # print the string in the `ingredients` variable in all-caps now that it's right.
     
-# confirm_ingredients()
+confirm_ingredients()
 
 
 def favorite_bake():  # User Input/Type conversion
