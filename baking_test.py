@@ -20,7 +20,7 @@ class TestBakingStrings(TestCase):
             'milk eggs flour sugar\nmilk eggs flour sugar\nmilk eggs flour sugar\n',
             mock_stdout.getvalue()
         )
-
+        
     @mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_confirm_ingredients(self, mock_stdout):
         confirm_ingredients()
